@@ -1,12 +1,5 @@
-# Globelabs::Sms
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/globelabs/sms`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
-## Installation
-
-Add this line to your application's Gemfile:
+# ruby-globelabs-sms
+Simple wrapper for [Globe Labs](http://www.globelabs.com.ph/) SMS api
 
 ```ruby
 gem 'globelabs-sms'
@@ -22,7 +15,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+sms = Globelabs::SMS.new
+options = {
+  message: 'hello',
+  address: '0915xxxxxx',
+  sender_address: '1292',
+  access_token: 'iwexlwioj23jksdf'
+}
+response = sms.send_to options
+```
 
 ## Development
 
@@ -37,3 +39,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+=======
