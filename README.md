@@ -1,6 +1,8 @@
 # ruby-globelabs-sms
 Simple wrapper for [Globe Labs](http://www.globelabs.com.ph/) SMS api
 
+[![Build Status](https://travis-ci.org/BernardTolosajr/ruby-globelabs-sms.svg)](https://travis-ci.org/BernardTolosajr/ruby-globelabs-sms.svg)
+
 ```ruby
 gem 'globelabs-sms'
 ```
