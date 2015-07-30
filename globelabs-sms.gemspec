@@ -5,13 +5,13 @@ require 'globelabs/sms/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "globelabs-sms"
-  spec.version       = Globelabs::Sms::VERSION
-  spec.authors       = ["BT"]
+  spec.version       = Globelabs::SMS::VERSION
+  spec.authors       = ['Bernard Tolosa']
   spec.email         = ["bernardotolosajr@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = 'Simple wrapper for globelabs SMS'
+  spec.description   = 'Simple wrapper for globelabs SMS'
+  spec.homepage      = ''
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
@@ -22,6 +22,9 @@ Gem::Specification.new do |spec|
     spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
   end
 
-  spec.add_development_dependency "bundler", "~> 1.9"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency 'bundler', '~> 1.9'
+  spec.add_development_dependency 'rake', '~> 10.0'
+  spec.add_dependency 'faraday', '~> 0.9'
+  spec.add_dependency 'multi_json', '~> 1.3'
+  spec.add_development_dependency 'webmock'
 end
