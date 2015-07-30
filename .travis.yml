@@ -3,3 +3,5 @@ before_install:
   - gem update bundler
 rvm:
   - 2.2.0
+
+bundler_args: --without development --retry=3 --jobs=3
